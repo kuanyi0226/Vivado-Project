@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23068 
+INFO: Helper process launched with PID 31328 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 323.750 ; gain = 75.055
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 321.992 ; gain = 75.676
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'VGA_TOP' [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top.v:1]
 INFO: [Synth 8-638] synthesizing module 'VGA_CTRL' [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_ctrl.v:1]
@@ -35,17 +35,53 @@ INFO: [Synth 8-638] synthesizing module 'VGA_CTRL' [C:/Users/KuanYi/Vivado_Proje
 	Parameter V_Start bound to: 34 - type: integer 
 	Parameter V_End bound to: 514 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'VGA_CTRL' (1#1) [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_ctrl.v:1]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-29348-DESKTOP-NIPFRBE/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-29348-DESKTOP-NIPFRBE/realtime/clk_wiz_0_stub.v:5]
-WARNING: [Synth 8-350] instance 'clk_wiz_0_0' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top.v:31]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-29348-DESKTOP-NIPFRBE/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (3#1) [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-29348-DESKTOP-NIPFRBE/realtime/blk_mem_gen_0_stub.v:6]
-WARNING: [Synth 8-689] width (1) of port connection 'addra' does not match port width (19) of module 'blk_mem_gen_0' [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top.v:38]
-WARNING: [Synth 8-6014] Unused sequential element addr_qoi_reg was removed.  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top.v:55]
-WARNING: [Synth 8-3848] Net addr in module/entity VGA_TOP does not have driver. [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top.v:38]
-INFO: [Synth 8-256] done synthesizing module 'VGA_TOP' (4#1) [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top.v:1]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-47820-DESKTOP-NIPFRBE/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-47820-DESKTOP-NIPFRBE/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_wiz_0_0' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top.v:34]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-47820-DESKTOP-NIPFRBE/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (3#1) [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-47820-DESKTOP-NIPFRBE/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Encode_Decode' [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:1]
+	Parameter QOI_OP_INDEX bound to: 2'b00 
+	Parameter QOI_OP_DIFF bound to: 2'b01 
+	Parameter QOI_OP_LUMA bound to: 2'b10 
+	Parameter QOI_OP_RUN bound to: 2'b11 
+	Parameter QOI_OP_RGB bound to: 8'b11111110 
+	Parameter LOAD bound to: 3'b000 
+	Parameter ENCODE bound to: 3'b001 
+	Parameter DECODE_RST bound to: 3'b010 
+	Parameter DECODE bound to: 3'b011 
+	Parameter FINI bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:317]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:247]
+WARNING: [Synth 8-6014] Unused sequential element next_b_reg was removed.  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:115]
+WARNING: [Synth 8-6014] Unused sequential element chunk_len_reg was removed.  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:229]
+WARNING: [Synth 8-6014] Unused sequential element read_flag_reg was removed.  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:231]
+WARNING: [Synth 8-6014] Unused sequential element next_chunk_len_reg was removed.  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:235]
+WARNING: [Synth 8-6014] Unused sequential element outb_reg was removed.  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:241]
+WARNING: [Synth 8-6014] Unused sequential element drun_reg was removed.  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:242]
+WARNING: [Synth 8-5788] Register next_chunk_reg[3] in module Encode_Decode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:264]
+WARNING: [Synth 8-5788] Register next_chunk_reg[2] in module Encode_Decode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:264]
+WARNING: [Synth 8-5788] Register next_chunk_reg[1] in module Encode_Decode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:264]
+WARNING: [Synth 8-5788] Register next_chunk_reg[0] in module Encode_Decode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:264]
+WARNING: [Synth 8-5788] Register index_reg in module Encode_Decode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-5788] Register chunk_buff_reg in module Encode_Decode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-5788] Register decode_state_reg in module Encode_Decode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:312]
+WARNING: [Synth 8-5788] Register run_counter_reg in module Encode_Decode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:313]
+WARNING: [Synth 8-5788] Register write_data_reg in module Encode_Decode is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:322]
+WARNING: [Synth 8-4767] Trying to implement RAM 'chunk_buff_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "chunk_buff_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'index_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "index_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'Encode_Decode' (4#1) [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:1]
+INFO: [Synth 8-256] done synthesizing module 'VGA_TOP' (5#1) [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top.v:1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 364.828 ; gain = 116.133
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 390.125 ; gain = 143.809
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -55,75 +91,130 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 364.828 ; gain = 116.133
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 390.125 ; gain = 143.809
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-29348-DESKTOP-NIPFRBE/dcp5/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen0'
-Finished Parsing XDC File [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-29348-DESKTOP-NIPFRBE/dcp5/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen0'
-Parsing XDC File [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-29348-DESKTOP-NIPFRBE/dcp7/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0_0'
-Finished Parsing XDC File [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-29348-DESKTOP-NIPFRBE/dcp7/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0_0'
+Parsing XDC File [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-47820-DESKTOP-NIPFRBE/dcp5/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0_0'
+Finished Parsing XDC File [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-47820-DESKTOP-NIPFRBE/dcp5/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0_0'
+Parsing XDC File [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-47820-DESKTOP-NIPFRBE/dcp7/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen0'
+Finished Parsing XDC File [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-47820-DESKTOP-NIPFRBE/dcp7/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen0'
 Parsing XDC File [C:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/constrs_1/new/qoi.xdc]
 Finished Parsing XDC File [C:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/constrs_1/new/qoi.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/constrs_1/new/qoi.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_TOP_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 790.094 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 832.863 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 832.863 ; gain = 586.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 832.863 ; gain = 586.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-29348-DESKTOP-NIPFRBE/dcp7/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-29348-DESKTOP-NIPFRBE/dcp7/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-47820-DESKTOP-NIPFRBE/dcp5/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/.Xil/Vivado-47820-DESKTOP-NIPFRBE/dcp5/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for blk_mem_gen0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for clk_wiz_0_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 832.863 ; gain = 586.547
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "vcount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:317]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:125]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:118]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:119]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:125]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:118]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:119]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:125]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:118]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:119]
+INFO: [Synth 8-5546] ROM "idx" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "write_ena" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "addr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "decode_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element run_reg was removed.  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:237]
+INFO: [Synth 8-5546] ROM "idx" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "write_ena" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "addr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "decode_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "encode_done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "decode_done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_chunk" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'next_run_reg' [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:208]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 832.863 ; gain = 586.547
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |Encode_Decode__GB0 |           1|     41227|
+|2     |Encode_Decode__GB1 |           1|      8222|
+|3     |VGA_TOP__GC0       |           1|       828|
++------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     19 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 2     
 	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 3     
+	   4 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 3     
 +---Registers : 
-	               19 Bit    Registers := 1     
+	               32 Bit    Registers := 64    
+	               19 Bit    Registers := 2     
 	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 207   
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
 	                1 Bit    Registers := 5     
 +---Muxes : 
-	   2 Input     19 Bit        Muxes := 1     
+	   6 Input   1608 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 2     
+	   4 Input     19 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 407   
+	   5 Input      8 Bit        Muxes := 62    
+	   4 Input      8 Bit        Muxes := 50    
+	   2 Input      6 Bit        Muxes := 4     
+	   4 Input      6 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 62    
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 86    
+	   4 Input      1 Bit        Muxes := 9     
+	   7 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -137,9 +228,47 @@ Detailed RTL Component Info :
 	   2 Input     19 Bit       Adders := 1     
 +---Registers : 
 	               19 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     19 Bit        Muxes := 1     
+Module Encode_Decode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 3     
+	   4 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 64    
+	               19 Bit    Registers := 1     
+	                8 Bit    Registers := 207   
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input   1608 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   4 Input     19 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 407   
+	   5 Input      8 Bit        Muxes := 62    
+	   4 Input      8 Bit        Muxes := 50    
+	   2 Input      6 Bit        Muxes := 4     
+	   4 Input      6 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 62    
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 84    
+	   4 Input      1 Bit        Muxes := 9     
+	   7 Input      1 Bit        Muxes := 1     
 Module VGA_CTRL 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -165,47 +294,252 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:118]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:119]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:125]
+WARNING: [Synth 8-6014] Unused sequential element run_reg was removed.  [C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v:237]
 INFO: [Synth 8-5546] ROM "vga_ctrl_0/vcount" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3917] design VGA_TOP has port vga_r[0] driven by constant 0
-WARNING: [Synth 8-3917] design VGA_TOP has port vga_g[0] driven by constant 0
-WARNING: [Synth 8-3917] design VGA_TOP has port vga_b[1] driven by constant 0
-WARNING: [Synth 8-3917] design VGA_TOP has port vga_b[0] driven by constant 0
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (write_enable_reg)
-WARNING: [Synth 8-3332] Sequential element (write_enable_reg) is unused and will be removed from module VGA_TOP.
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_0/next_chunk_reg[2][0]' (FDE) to 'encoder_decoder0i_0/next_chunk_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_0/next_chunk_reg[3][0]' (FDE) to 'encoder_decoder0i_0/next_chunk_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_0/next_chunk_reg[2][1]' (FDE) to 'encoder_decoder0i_0/next_chunk_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_0/next_chunk_reg[3][1]' (FDE) to 'encoder_decoder0i_0/next_chunk_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_0/next_chunk_reg[2][2]' (FDE) to 'encoder_decoder0i_0/next_chunk_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_0/next_chunk_reg[3][2]' (FDE) to 'encoder_decoder0i_0/next_chunk_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_0/next_chunk_reg[2][3]' (FDE) to 'encoder_decoder0i_0/next_chunk_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_0/next_chunk_reg[3][3]' (FDE) to 'encoder_decoder0i_0/next_chunk_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_0/next_chunk_reg[2][4]' (FDE) to 'encoder_decoder0i_0/next_chunk_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_0/next_chunk_reg[3][4]' (FDE) to 'encoder_decoder0i_0/next_chunk_reg[3][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_0/\next_chunk_reg[3][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[63][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[62][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[61][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[60][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[59][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[58][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[57][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[56][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[55][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[54][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[53][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[52][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[51][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[50][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[49][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[48][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[47][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[46][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[45][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[44][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[43][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[42][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[41][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[40][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[39][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[38][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[37][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[36][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[35][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[34][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[33][0] )
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[32][0]' (FDE) to 'encoder_decoder0i_1/index_reg[32][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[31][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[30][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[29][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[28][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[27][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[26][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[25][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[24][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[23][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[22][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[21][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[20][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[19][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[18][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[17][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[16][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[15][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[14][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[13][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[12][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[10][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[9][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[8][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[7][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[1][0] )
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[0][0]' (FDE) to 'encoder_decoder0i_1/index_reg[0][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[63][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[62][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[61][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[60][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[59][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[58][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[57][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[56][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[55][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[54][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[53][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[52][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[51][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[50][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[49][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[48][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[47][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[46][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[45][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[44][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[43][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[42][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[41][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[40][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[39][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[38][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[37][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[36][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[35][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[34][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[33][1] )
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[32][1]' (FDE) to 'encoder_decoder0i_1/index_reg[32][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[31][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[30][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[29][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[28][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[27][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encoder_decoder0i_1/\index_reg[26][1] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[0][1]' (FDE) to 'encoder_decoder0i_1/index_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[32][2]' (FDE) to 'encoder_decoder0i_1/index_reg[32][31]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[0][2]' (FDE) to 'encoder_decoder0i_1/index_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/prev_b_reg[2]' (FDCE) to 'encoder_decoder0i_1/prev_g_reg[0]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/prev_b_reg[1]' (FDCE) to 'encoder_decoder0i_1/prev_g_reg[0]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/prev_b_reg[0]' (FDCE) to 'encoder_decoder0i_1/prev_g_reg[0]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[32][3]' (FDE) to 'encoder_decoder0i_1/index_reg[32][31]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[0][3]' (FDE) to 'encoder_decoder0i_1/index_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[32][4]' (FDE) to 'encoder_decoder0i_1/index_reg[32][31]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[0][4]' (FDE) to 'encoder_decoder0i_1/index_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[32][5]' (FDE) to 'encoder_decoder0i_1/index_reg[32][31]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[0][5]' (FDE) to 'encoder_decoder0i_1/index_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[63][6]' (FDE) to 'encoder_decoder0i_1/index_reg[62][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[62][6]' (FDE) to 'encoder_decoder0i_1/index_reg[60][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[61][6]' (FDE) to 'encoder_decoder0i_1/index_reg[60][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[60][6]' (FDE) to 'encoder_decoder0i_1/index_reg[58][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[59][6]' (FDE) to 'encoder_decoder0i_1/index_reg[58][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[58][6]' (FDE) to 'encoder_decoder0i_1/index_reg[56][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[57][6]' (FDE) to 'encoder_decoder0i_1/index_reg[56][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[56][6]' (FDE) to 'encoder_decoder0i_1/index_reg[54][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[55][6]' (FDE) to 'encoder_decoder0i_1/index_reg[54][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[54][6]' (FDE) to 'encoder_decoder0i_1/index_reg[52][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[53][6]' (FDE) to 'encoder_decoder0i_1/index_reg[52][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[52][6]' (FDE) to 'encoder_decoder0i_1/index_reg[50][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[51][6]' (FDE) to 'encoder_decoder0i_1/index_reg[50][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[50][6]' (FDE) to 'encoder_decoder0i_1/index_reg[48][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[49][6]' (FDE) to 'encoder_decoder0i_1/index_reg[48][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[48][6]' (FDE) to 'encoder_decoder0i_1/index_reg[46][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[47][6]' (FDE) to 'encoder_decoder0i_1/index_reg[46][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[46][6]' (FDE) to 'encoder_decoder0i_1/index_reg[44][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[45][6]' (FDE) to 'encoder_decoder0i_1/index_reg[44][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[44][6]' (FDE) to 'encoder_decoder0i_1/index_reg[42][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[43][6]' (FDE) to 'encoder_decoder0i_1/index_reg[42][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[42][6]' (FDE) to 'encoder_decoder0i_1/index_reg[40][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[41][6]' (FDE) to 'encoder_decoder0i_1/index_reg[40][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[40][6]' (FDE) to 'encoder_decoder0i_1/index_reg[38][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[39][6]' (FDE) to 'encoder_decoder0i_1/index_reg[38][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[38][6]' (FDE) to 'encoder_decoder0i_1/index_reg[36][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[37][6]' (FDE) to 'encoder_decoder0i_1/index_reg[36][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[36][6]' (FDE) to 'encoder_decoder0i_1/index_reg[34][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[35][6]' (FDE) to 'encoder_decoder0i_1/index_reg[34][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[34][6]' (FDE) to 'encoder_decoder0i_1/index_reg[30][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[33][6]' (FDE) to 'encoder_decoder0i_1/index_reg[30][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[31][6]' (FDE) to 'encoder_decoder0i_1/index_reg[30][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[30][6]' (FDE) to 'encoder_decoder0i_1/index_reg[28][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[29][6]' (FDE) to 'encoder_decoder0i_1/index_reg[28][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[28][6]' (FDE) to 'encoder_decoder0i_1/index_reg[26][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[27][6]' (FDE) to 'encoder_decoder0i_1/index_reg[26][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[26][6]' (FDE) to 'encoder_decoder0i_1/index_reg[24][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[25][6]' (FDE) to 'encoder_decoder0i_1/index_reg[24][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[24][6]' (FDE) to 'encoder_decoder0i_1/index_reg[22][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[23][6]' (FDE) to 'encoder_decoder0i_1/index_reg[22][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[22][6]' (FDE) to 'encoder_decoder0i_1/index_reg[20][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[21][6]' (FDE) to 'encoder_decoder0i_1/index_reg[20][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[20][6]' (FDE) to 'encoder_decoder0i_1/index_reg[18][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[19][6]' (FDE) to 'encoder_decoder0i_1/index_reg[18][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[18][6]' (FDE) to 'encoder_decoder0i_1/index_reg[16][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[17][6]' (FDE) to 'encoder_decoder0i_1/index_reg[16][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[16][6]' (FDE) to 'encoder_decoder0i_1/index_reg[14][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[15][6]' (FDE) to 'encoder_decoder0i_1/index_reg[14][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[14][6]' (FDE) to 'encoder_decoder0i_1/index_reg[12][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[13][6]' (FDE) to 'encoder_decoder0i_1/index_reg[12][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[12][6]' (FDE) to 'encoder_decoder0i_1/index_reg[10][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[11][6]' (FDE) to 'encoder_decoder0i_1/index_reg[10][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[10][6]' (FDE) to 'encoder_decoder0i_1/index_reg[8][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[9][6]' (FDE) to 'encoder_decoder0i_1/index_reg[8][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[8][6]' (FDE) to 'encoder_decoder0i_1/index_reg[6][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[7][6]' (FDE) to 'encoder_decoder0i_1/index_reg[6][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[6][6]' (FDE) to 'encoder_decoder0i_1/index_reg[4][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[5][6]' (FDE) to 'encoder_decoder0i_1/index_reg[4][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[4][6]' (FDE) to 'encoder_decoder0i_1/index_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[3][6]' (FDE) to 'encoder_decoder0i_1/index_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[2][6]' (FDE) to 'encoder_decoder0i_1/index_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[63][7]' (FDE) to 'encoder_decoder0i_1/index_reg[62][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[62][7]' (FDE) to 'encoder_decoder0i_1/index_reg[60][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[61][7]' (FDE) to 'encoder_decoder0i_1/index_reg[60][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[60][7]' (FDE) to 'encoder_decoder0i_1/index_reg[58][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[59][7]' (FDE) to 'encoder_decoder0i_1/index_reg[58][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[58][7]' (FDE) to 'encoder_decoder0i_1/index_reg[56][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[57][7]' (FDE) to 'encoder_decoder0i_1/index_reg[56][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[56][7]' (FDE) to 'encoder_decoder0i_1/index_reg[54][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[55][7]' (FDE) to 'encoder_decoder0i_1/index_reg[54][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[54][7]' (FDE) to 'encoder_decoder0i_1/index_reg[52][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[53][7]' (FDE) to 'encoder_decoder0i_1/index_reg[52][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[52][7]' (FDE) to 'encoder_decoder0i_1/index_reg[50][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[51][7]' (FDE) to 'encoder_decoder0i_1/index_reg[50][7]'
+INFO: [Synth 8-3886] merging instance 'encoder_decoder0i_1/index_reg[50][7]' (FDE) to 'encoder_decoder0i_1/index_reg[48][7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 887.609 ; gain = 641.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |Encode_Decode__GB0 |           1|      8362|
+|2     |Encode_Decode__GB1 |           1|       486|
+|3     |VGA_TOP__GC0       |           1|       237|
++------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0_0/clk_out1' to pin 'clk_wiz_0_0/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 887.609 ; gain = 641.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 887.609 ; gain = 641.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |VGA_TOP__GC0  |           1|       237|
+|2     |VGA_TOP_GT0   |           1|      8848|
++------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 887.609 ; gain = 641.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -228,9 +562,8 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen0 has unconnected pin addra[0]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 887.609 ; gain = 641.293
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -243,7 +576,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 887.609 ; gain = 641.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -255,25 +588,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 887.609 ; gain = 641.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 887.609 ; gain = 641.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 887.609 ; gain = 641.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 887.609 ; gain = 641.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -293,43 +626,51 @@ Report Cell Usage:
 +------+--------------+------+
 |1     |blk_mem_gen_0 |     1|
 |2     |clk_wiz_0     |     1|
-|3     |CARRY4        |     5|
-|4     |LUT1          |    19|
-|5     |LUT2          |     5|
-|6     |LUT3          |    12|
-|7     |LUT4          |    10|
-|8     |LUT5          |     9|
-|9     |LUT6          |    31|
-|10    |FDCE          |    41|
-|11    |FDPE          |     2|
-|12    |IBUF          |     1|
-|13    |OBUF          |    14|
+|3     |CARRY4        |    16|
+|4     |LUT1          |    45|
+|5     |LUT2          |   110|
+|6     |LUT3          |    90|
+|7     |LUT4          |   194|
+|8     |LUT5          |   360|
+|9     |LUT6          |  1485|
+|10    |MUXF7         |   123|
+|11    |MUXF8         |    56|
+|12    |FDCE          |   104|
+|13    |FDPE          |     2|
+|14    |FDRE          |  1154|
+|15    |LD            |     6|
+|16    |IBUF          |     1|
+|17    |OBUF          |    16|
 +------+--------------+------+
 
 Report Instance Areas: 
-+------+-------------+---------+------+
-|      |Instance     |Module   |Cells |
-+------+-------------+---------+------+
-|1     |top          |         |   167|
-|2     |  vga_ctrl_0 |VGA_CTRL |    68|
-+------+-------------+---------+------+
++------+-------------------+--------------+------+
+|      |Instance           |Module        |Cells |
++------+-------------------+--------------+------+
+|1     |top                |              |  3780|
+|2     |  encoder_decoder0 |Encode_Decode |  3612|
+|3     |  vga_ctrl_0       |VGA_CTRL      |    68|
++------+-------------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 790.094 ; gain = 541.398
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 887.609 ; gain = 641.293
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 790.094 ; gain = 116.133
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 790.094 ; gain = 541.398
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 887.609 ; gain = 198.555
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 887.609 ; gain = 641.293
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'VGA_TOP' is not ideal for floorplanning, since the cellview 'Encode_Decode' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 6 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 6 instances were transformed.
+  LD => LDCE (inverted pins: G): 6 instances
 
-24 Infos, 10 Warnings, 1 Critical Warnings and 0 Errors encountered.
+256 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 790.094 ; gain = 551.672
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 887.609 ; gain = 651.801
 INFO: [Common 17-1381] The checkpoint 'C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/VGA_TOP.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 790.094 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed May 15 16:19:16 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 887.609 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat May 18 03:53:48 2024...

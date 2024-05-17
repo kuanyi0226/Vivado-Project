@@ -1,0 +1,27 @@
+C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_write_test.v {1 {vlog -work work -vopt -stats=none C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_write_test.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module VGA_TOP
+
+Top level modules:
+	VGA_TOP
+
+} {} {}} C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top.v {1 {vlog -work work -vopt -stats=none C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module VGA_TOP
+
+Top level modules:
+	VGA_TOP
+
+} {} {}} C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top_v1.v {0 {vlog -work work -vopt -stats=none C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top_v1.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module VGA_TOP
+** Error: (vlog-13069) C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top_v1.v(57): near ")": syntax error, unexpected ')', expecting .* or '.'.
+
+} {4.0 5.0} {}} C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_ctrl.v {1 {vlog -work work -vopt -stats=none C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_ctrl.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module VGA_CTRL
+
+Top level modules:
+	VGA_CTRL
+
+} {} {}}

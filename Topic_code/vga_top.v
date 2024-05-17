@@ -5,15 +5,18 @@ module VGA_TOP(
 	output vga_vs, 
 	output [3:0] vga_r, 
 	output [3:0] vga_g, 
-	output [3:0] vga_b
+	output [3:0] vga_b,
+	output wire encode_done,
+	output wire decode_done
 );
 
 wire clk_25mHz;
 wire [7:0] dout_qoi;
 wire [7:0] dout_vga;
 reg [18:0] addr_vga;
-reg [18:0] addr_qoi;
-reg write_enable;
+wire [18:0] addr_qoi;
+wire write_enable;
+wire [7:0] data_in;
 
 VGA_CTRL vga_ctrl_0(
 	.clk(clk_25mHz), 
@@ -35,12 +38,12 @@ clk_wiz_0 clk_wiz_0_0(
 	);
 
 blk_mem_gen_0 blk_mem_gen0(
-		.addra(addr),
+		.addra(addr_qoi),//
 		.clka(clk),
-		.dina(8'd0),
-		.douta(dout_qoi),
-		.wea(write_enable),
-		.ena(1'd1),
+		.dina(data_in),//
+		.douta(dout_qoi),//
+		.wea(write_enable),//
+		.ena(1'd1),//
 
 		.addrb(addr_vga),
 		.clkb(clk_25mHz),
@@ -48,17 +51,33 @@ blk_mem_gen_0 blk_mem_gen0(
 		.doutb(dout_vga),
 		.web(1'd0)
 	);
+	
+Encode_Decode encoder_decoder0(
+	.clk(clk),
+	.rst(rst),
+	.pixel(dout_qoi),
+	.addr(addr_qoi),
+	.write_ena(write_enable),
+	.write_data(data_in),
+	.encode_done(encode_done),
+	.decode_done(decode_done)
+);
+/*
+encoder encoder_0(
+	.px(dout_qoi)
+)
+*/
 
 //qoi
-always @(posedge clk or posedge rst) begin
-	if(rst) begin
-		addr_qoi <= 0;
-		write_enable <= 0;
-	end
-	else begin
+// always @(posedge clk or posedge rst) begin
+// 	if(rst) begin
+// 		addr_qoi <= 0;
+// 		write_enable <= 0;
+// 	end
+// 	else begin
 		
-	end
-end
+// 	end
+// end
 
 //vga
 always @(posedge clk_25mHz or posedge rst) begin

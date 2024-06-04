@@ -20,9 +20,11 @@ set_property ip_cache_permissions {read write} [current_project]
 add_files C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/dog.coe
 add_files C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/Lab5.coe
 add_files C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/love.coe
-add_files c:/Users/KuanYi/Vivado_Project/Topic/Topic_code/love2.coe
+add_files C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/love2.coe
+add_files C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/dog640.coe
+add_files c:/Users/KuanYi/Vivado_Project/Topic/Topic_code/shibuya640.coe
 read_verilog -library xil_defaultlib {
-  C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encode_decode.v
+  C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encoder.v
   C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_ctrl.v
   C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top.v
 }

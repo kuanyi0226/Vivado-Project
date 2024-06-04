@@ -2,35 +2,35 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Sat May 18 02:53:33 2024
-# Process ID: 40240
+# Start of session at: Tue Jun  4 22:33:39 2024
+# Process ID: 17180
 # Current directory: C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/blk_mem_gen_0_synth_1
 # Command line: vivado.exe -log blk_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
 # Log file: C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
 # Journal file: C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/blk_mem_gen_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source blk_mem_gen_0.tcl -notrace
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 322.754 ; gain = 83.797
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 323.066 ; gain = 83.594
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:75]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (11#1) [c:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:75]
-Finished RTL Elaboration : Time (s): cpu = 00:02:06 ; elapsed = 00:02:07 . Memory (MB): peak = 619.082 ; gain = 380.125
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:06 ; elapsed = 00:02:08 . Memory (MB): peak = 619.082 ; gain = 380.125
+Finished RTL Elaboration : Time (s): cpu = 00:02:09 ; elapsed = 00:02:11 . Memory (MB): peak = 619.816 ; gain = 380.344
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:09 ; elapsed = 00:02:11 . Memory (MB): peak = 619.816 ; gain = 380.344
 INFO: [Device 21-403] Loading part xc7z020clg484-1
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.156 . Memory (MB): peak = 888.422 ; gain = 0.000
-Finished Constraint Validation : Time (s): cpu = 00:02:15 ; elapsed = 00:02:17 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:15 ; elapsed = 00:02:17 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:15 ; elapsed = 00:02:17 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:25 ; elapsed = 00:02:28 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:32 ; elapsed = 00:02:35 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished Timing Optimization : Time (s): cpu = 00:02:32 ; elapsed = 00:02:35 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished Technology Mapping : Time (s): cpu = 00:02:32 ; elapsed = 00:02:36 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished IO Insertion : Time (s): cpu = 00:02:33 ; elapsed = 00:02:36 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:33 ; elapsed = 00:02:36 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:33 ; elapsed = 00:02:37 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:33 ; elapsed = 00:02:37 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:33 ; elapsed = 00:02:37 . Memory (MB): peak = 888.422 ; gain = 649.465
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:33 ; elapsed = 00:02:37 . Memory (MB): peak = 888.422 ; gain = 649.465
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 892.203 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 892.203 ; gain = 652.730
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 892.203 ; gain = 652.730
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:19 ; elapsed = 00:02:21 . Memory (MB): peak = 892.203 ; gain = 652.730
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:21 ; elapsed = 00:02:24 . Memory (MB): peak = 892.203 ; gain = 652.730
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:29 ; elapsed = 00:02:32 . Memory (MB): peak = 892.203 ; gain = 652.730
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:36 ; elapsed = 00:02:39 . Memory (MB): peak = 892.203 ; gain = 652.730
+Finished Timing Optimization : Time (s): cpu = 00:02:36 ; elapsed = 00:02:39 . Memory (MB): peak = 892.203 ; gain = 652.730
+Finished Technology Mapping : Time (s): cpu = 00:02:36 ; elapsed = 00:02:40 . Memory (MB): peak = 893.711 ; gain = 654.238
+Finished IO Insertion : Time (s): cpu = 00:02:37 ; elapsed = 00:02:40 . Memory (MB): peak = 893.711 ; gain = 654.238
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:37 ; elapsed = 00:02:40 . Memory (MB): peak = 893.711 ; gain = 654.238
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:37 ; elapsed = 00:02:40 . Memory (MB): peak = 893.711 ; gain = 654.238
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:37 ; elapsed = 00:02:40 . Memory (MB): peak = 893.711 ; gain = 654.238
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:37 ; elapsed = 00:02:40 . Memory (MB): peak = 893.711 ; gain = 654.238
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:37 ; elapsed = 00:02:40 . Memory (MB): peak = 893.711 ; gain = 654.238
 
 Report Cell Usage: 
 +------+------------+------+
@@ -44,7 +44,7 @@ Report Cell Usage:
 |6     |MUXF7       |   240|
 |7     |MUXF8       |   112|
 |8     |RAMB18E1    |     1|
-|9     |RAMB36E1    |    48|
+|9     |RAMB36E1    |     1|
 |10    |RAMB36E1_1  |     1|
 |11    |RAMB36E1_10 |     1|
 |12    |RAMB36E1_11 |     1|
@@ -65,15 +65,62 @@ Report Cell Usage:
 |27    |RAMB36E1_25 |     1|
 |28    |RAMB36E1_26 |     1|
 |29    |RAMB36E1_27 |     1|
-|30    |RAMB36E1_28 |    47|
-|31    |RAMB36E1_3  |     1|
-|32    |RAMB36E1_4  |     1|
-|33    |RAMB36E1_5  |     1|
-|34    |RAMB36E1_6  |     1|
-|35    |RAMB36E1_7  |     1|
-|36    |RAMB36E1_8  |     1|
-|37    |RAMB36E1_9  |     1|
-|38    |FDRE        |    20|
+|30    |RAMB36E1_28 |     1|
+|31    |RAMB36E1_29 |     1|
+|32    |RAMB36E1_3  |     1|
+|33    |RAMB36E1_30 |     1|
+|34    |RAMB36E1_31 |     1|
+|35    |RAMB36E1_32 |     1|
+|36    |RAMB36E1_33 |     1|
+|37    |RAMB36E1_34 |     1|
+|38    |RAMB36E1_35 |     1|
+|39    |RAMB36E1_36 |     1|
+|40    |RAMB36E1_37 |     1|
+|41    |RAMB36E1_38 |     1|
+|42    |RAMB36E1_39 |     1|
+|43    |RAMB36E1_4  |     1|
+|44    |RAMB36E1_40 |     1|
+|45    |RAMB36E1_41 |     1|
+|46    |RAMB36E1_42 |     1|
+|47    |RAMB36E1_43 |     1|
+|48    |RAMB36E1_44 |     1|
+|49    |RAMB36E1_45 |     1|
+|50    |RAMB36E1_46 |     1|
+|51    |RAMB36E1_47 |     1|
+|52    |RAMB36E1_48 |     1|
+|53    |RAMB36E1_49 |     1|
+|54    |RAMB36E1_5  |     1|
+|55    |RAMB36E1_50 |     1|
+|56    |RAMB36E1_51 |     1|
+|57    |RAMB36E1_52 |     1|
+|58    |RAMB36E1_53 |     1|
+|59    |RAMB36E1_54 |     1|
+|60    |RAMB36E1_55 |     1|
+|61    |RAMB36E1_56 |     1|
+|62    |RAMB36E1_57 |     1|
+|63    |RAMB36E1_58 |     1|
+|64    |RAMB36E1_59 |     1|
+|65    |RAMB36E1_6  |     1|
+|66    |RAMB36E1_60 |     1|
+|67    |RAMB36E1_61 |     1|
+|68    |RAMB36E1_62 |     1|
+|69    |RAMB36E1_63 |     1|
+|70    |RAMB36E1_64 |     1|
+|71    |RAMB36E1_65 |     1|
+|72    |RAMB36E1_66 |     1|
+|73    |RAMB36E1_67 |     1|
+|74    |RAMB36E1_68 |     1|
+|75    |RAMB36E1_69 |     1|
+|76    |RAMB36E1_7  |     1|
+|77    |RAMB36E1_70 |     1|
+|78    |RAMB36E1_71 |     1|
+|79    |RAMB36E1_72 |     1|
+|80    |RAMB36E1_73 |     1|
+|81    |RAMB36E1_74 |     1|
+|82    |RAMB36E1_75 |    47|
+|83    |RAMB36E1_8  |     1|
+|84    |RAMB36E1_9  |     1|
+|85    |FDRE        |    20|
 +------+------------+------+
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:33 ; elapsed = 00:02:37 . Memory (MB): peak = 888.422 ; gain = 649.465
-synth_design: Time (s): cpu = 00:02:35 ; elapsed = 00:02:39 . Memory (MB): peak = 888.422 ; gain = 650.090
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:37 ; elapsed = 00:02:40 . Memory (MB): peak = 893.711 ; gain = 654.238
+synth_design: Time (s): cpu = 00:02:40 ; elapsed = 00:02:43 . Memory (MB): peak = 902.473 ; gain = 665.629

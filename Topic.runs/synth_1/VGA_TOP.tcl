@@ -22,21 +22,22 @@ add_files C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/Lab5.coe
 add_files C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/love.coe
 add_files C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/love2.coe
 add_files C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/dog640.coe
-add_files c:/Users/KuanYi/Vivado_Project/Topic/Topic_code/shibuya640.coe
+add_files C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/shibuya640.coe
+add_files c:/Users/KuanYi/Vivado_Project/Topic/Topic_code/mouse640.coe
 read_verilog -library xil_defaultlib {
   C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/encoder.v
   C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_ctrl.v
   C:/Users/KuanYi/Vivado_Project/Topic/Topic_code/vga_top.v
 }
+read_ip -quiet C:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+set_property is_locked true [get_files C:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+
 read_ip -quiet C:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 set_property is_locked true [get_files C:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
-
-read_ip -quiet C:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-set_property is_locked true [get_files C:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -49,6 +50,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc C:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/constrs_1/new/qoi.xdc
 set_property used_in_implementation false [get_files C:/Users/KuanYi/Vivado_Project/Topic/Topic.srcs/constrs_1/new/qoi.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 
 synth_design -top VGA_TOP -part xc7z020clg484-1
 

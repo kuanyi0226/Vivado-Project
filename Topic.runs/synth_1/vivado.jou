@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Jun  4 23:00:37 2024
-# Process ID: 16784
+# Start of session at: Fri Jun  7 00:35:17 2024
+# Process ID: 26016
 # Current directory: C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1
 # Command line: vivado.exe -log VGA_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_TOP.tcl
 # Log file: C:/Users/KuanYi/Vivado_Project/Topic/Topic.runs/synth_1/VGA_TOP.vds
